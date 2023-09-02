@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    height: 1000px;
+}
+
+.section-padding {
+    padding: .3rem 3rem;
+}
+
+.white {
+    color: #fff;
+}
+
+nav div ul li {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+nav div ul li:hover {
+    background-color: coral;
+}
+
+nav .navbar-brand {
+    font-size: 3rem;
+}
+
+.content {
+    position: relative;
+}
+
+.content img {
+    /* width: 100%;
+    height: 42rem; */
+    width: 100%;
+    height: 42rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rotate {
+    transform: rotate(30deg);
+}
+
+
+
+.content .box-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+    width: 40%;
+}
+
+.content .box-content .title {
+    font-size: 3rem;
+    margin: .5rem;
+}
+
+.content .box-content .text {
+    font-size: 1.6rem;
+
+}
+
+.content .box-content .info {
+    margin: .5rem;
+}
+
+.content .box-content .info .icon_time {
+    color: coral;
+    margin: 0 .3rem;
+}
+
+.content .box-content .info .icon_star {
+    color: coral;
+    margin: 0 .3rem;
+}
+
+.content .box-content .btn .active {
+    padding: .3rem 1rem;
+    margin: .5rem;
+}
+
+.content button {
+    font-size: 2rem;
+}
+
+.content button:hover {
+    background-color: coral;
+}
+
+.content .prev {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+.content .next {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+
+.list-fiml {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.box-fiml {
+    position: relative;
+    width: 300px;
+    height: 168px;
+    transition: 2s ease;
+
+}
+
+.box-fiml :hover {
+    transform: scale(1, 1.1)
+}
+
+.box-fiml img {
+    width: 300px;
+    height: 168px;
+}
+
+.info-fiml {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.latest {
+    margin: 3rem;
+    padding: .4rem 1rem;
+    border-left: 2px solid coral;
+    color: #fff;
+    font-weight: 800;
+}
+
+.latest-fiml {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.owl-controls {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.owl-buttons {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-hai {
+    background-image: url('./img/29.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.box-price {
+    margin: 0 4rem;
+    border-radius: 1rem;
+    transition: 1s ease;
+}
+
+.box-price :hover {
+    transform: translateY(10px);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.color-price {
+    background-color: cadetblue;
+}
+
+.hover-colra:hover {
+    /* background-color: coral; */
+    letter-spacing: .2rem;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+.list_icon i {
+    margin: .3rem .7rem;
+    font-size: 1.2rem;
+}
+
+.box-icon {
+    width: 80%;
+}
+
+.box-icon .icon {
+    font-size: 2.3rem;
+}
+
+.box-icon .d-flex {
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.box-icon .d-flex div {
+    margin: 0 .4rem;
+    /* line-height: .8rem; */
+}
+
+.box-icon .d-flex div .fs {
+    font-size: 1.6rem;
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    .content .box-content {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: #fff;
+        width: 60%;
+    }
+
+    .p-c {
+        width: 40%;
+    }
+
+    .box-price {
+        width: 100;
+        margin: 2rem 5rem;
+    }
+
+    .box-icon .d-flex {
+        width: 40%;
+    }
+
+    /* .content img {
+        width: 100%;
+    }
+
+    .list-fiml .box-fiml img{} */
+}
+
+@media (max-width:320px) {
+    html {
+        font-size: 45.5%;
+    }
+
+    .content .box-content {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        color: #fff;
+        width: 70%;
+    }
+
+    .box-price {
+        margin: 2rem 4rem;
+    }
+
+    .box-icon .d-flex {
+        width: 50%;
+    }
+}
